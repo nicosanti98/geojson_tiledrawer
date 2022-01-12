@@ -6,7 +6,7 @@
 - Is possible to draw geoJSON data as heatmap: 
 ![Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/hetamap.png "Heatmap")
 - And also geoJSON data as square heatmap: 
-![Square Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/squarehetamap.png "Square Heatmap")
+![Square Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/squareheatmap.png "Square Heatmap")
 
 
 Points and heatmap references directly to geogrphical data: for each element in data the library draws a point or an heatmap. 
