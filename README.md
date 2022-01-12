@@ -58,4 +58,5 @@ this.MIN_OPACITY = 0.05;
 
 
 After the initialization, you can use as you want all the methods: 
-###`setSTEP (colorsArray, valuesArray)`
+
+## `setSTEP (colorsArray, valuesArray)`
