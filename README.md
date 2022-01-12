@@ -1,8 +1,12 @@
 **geojson_tilebuilder** provides a way to draw inside a tile points, heatmaps and square heatmaps based on the same data type. 
 
 ### What can you do
-Is possible to draw geoJSON data as points: 
-![apap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/pallini.png "apap")
+- Is possible to draw geoJSON data as points: 
+![Points](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/pallini.png "Points")
+- Is possible to draw geoJSON data as heatmap: 
+![Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/hetamap.png "Heatmap")
+- And also geoJSON data as square heatmap: 
+![Square Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/hetamap.png "Square Heatmap")
 
 
 ### Installation
