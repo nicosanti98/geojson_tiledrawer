@@ -14,7 +14,9 @@ As regards square heatmap, instead, the library draws a prefixed number of squar
 
 The power of the library is that with the same data types you can select different ways to represent them in the same tiles, rather then use different types in different libraries.
 
-
+### Prerequisites
+To use the library as tile drawer and to overlay it in a map in order to represent geographical data, is necessary to use a map, like **OpenStreetMap** with a library like **Leaflet** to interact with it. So you can retrive geographical data from you actual view of the map and zoom level.
+Examples shown subsequently are made using this type of architecture. 
 
 ### Installation
 `npm install geojson_tilebuilder`
@@ -38,13 +40,16 @@ In the class initialization, most of settings are initialized to default value:
 this.TILE_SIZE = 512; //512px is default value
 this.POINT_RADIUS = 8; //8px is default value
 
- //This constraint represents the number of "big pixel"
- //printed in the tile using the method "printSquares"
-  this.SQUARES_PER_TILE = 16; //16 is default value
-  //Base options for tiles with heatmap
-  this.BLURRADIUS = 20; //px
-  this.CIRCLESRADIUS = 25; //px
-  this.MIN_OPACITY = 0.05; 
+//This constraint represents the number of "big pixel"
+//printed in the tile using the method "printSquares"
+this.SQUARES_PER_TILE = 16; //16 is default value
+//Base options for tiles with heatmap
+this.BLURRADIUS = 20; //px
+this.CIRCLESRADIUS = 25; //px
+this.MIN_OPACITY = 0.05; 
 ```
+
+- `TILE_SIZE` is the tile side length in pixel; 
+- `POINT_RADIUS`
 
 
