@@ -6,7 +6,7 @@
 - Is possible to draw geoJSON data as heatmap: 
 ![Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/hetamap.png "Heatmap")
 - And also geoJSON data as square heatmap: 
-![Square Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/squareheatmap.png "Square Heatmap")
+![Square Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/squarehetamap.png "Square Heatmap")
 
 
 Points and heatmap references directly to geogrphical data: for each element in data the library draws a point or an heatmap. 
@@ -15,7 +15,7 @@ As regards square heatmap, instead, the library draws a prefixed number of squar
 The power of the library is that with the same data types you can select different ways to represent them in the same tiles, rather then use different types in different libraries.
 
 ### Prerequisites
-To use the library as tile drawer and to overlay it in a map in order to represent geographical data, is necessary to use a map, like **OpenStreetMap** with a library like **Leaflet** to interact with it. So you can retrive geographical data from you actual view of the map and zoom level.
+To use the library as tile drawer and to overlay it in a map in order to represent geographical data, is necessary to use a map, like **OpenStreetMap** with a library like **Leaflet** to interact with it. So you can retrive geographical data from your actual view of the map and zoom level.
 Examples shown subsequently are made using this type of architecture. 
 
 ### Installation
@@ -50,6 +50,5 @@ this.MIN_OPACITY = 0.05;
 ```
 
 - `TILE_SIZE` is the tile side length in pixel; 
-- `POINT_RADIUS`
-
-
+- `POINT_RADIUS` is the radius of the points printed; 
+- `SQUARES_PER_TILE` is the number of squares in the tile shown in the square heatmap. If you select a power-of-two number, x and y value to add in the data array are equals and are \sqrt{number_of_squares}
