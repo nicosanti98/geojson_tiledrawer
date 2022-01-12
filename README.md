@@ -8,6 +8,8 @@
 - And also geoJSON data as square heatmap: 
 ![Square Heatmap](https://github.com/nicosanti98/geojson_tiledrawer/blob/main/images/squareheatmap.png "Square Heatmap")
 
+**All these images are from [SmartRoadSense](https://www.smartroadsense.it "SmartRoadSense") frontend*.
+
 
 Points and heatmap references directly to geogrphical data: for each element in data the library draws a point or an heatmap. 
 As regards square heatmap, instead, the library draws a prefixed number of squares inside a tiles. Every square color is based on the average of "points value" inside the square area. 
@@ -15,7 +17,7 @@ As regards square heatmap, instead, the library draws a prefixed number of squar
 The power of the library is that with the same data types you can select different ways to represent them in the same tiles, rather then use different types in different libraries.
 
 ### Prerequisites
-To use the library as tile drawer and to overlay it in a map in order to represent geographical data, is necessary to use a map, like **OpenStreetMap** with a library like **Leaflet** to interact with it. So you can retrive geographical data from your actual view of the map and zoom level.
+To use the library as tile drawer and to overlay it in a map in order to represent geographical data, is necessary to use a map, like [**OpenStreetMap**](https://www.openstreetmap.org/ "**OpenStreetMap**") with a library like [**Leaflet**](https://leafletjs.com/ "**Leaflet**") to interact with it. So you can retrive geographical data from your actual view of the map and zoom level.
 Examples shown subsequently are made using this type of architecture. 
 
 ### Installation
