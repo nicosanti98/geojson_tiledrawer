@@ -51,4 +51,11 @@ this.MIN_OPACITY = 0.05;
 
 - `TILE_SIZE` is the tile side length in pixel; 
 - `POINT_RADIUS` is the radius of the points printed; 
-- `SQUARES_PER_TILE` is the number of squares in the tile shown in the square heatmap. If you select a power-of-two number, x and y value to add in the data array are equals and are \sqrt{number_of_squares}
+- `SQUARES_PER_TILE` is the number of squares in the tile shown in the square heatmap. If you select a power-of-two number, x and y value to add in the data array are equals and are square root of numeber of squares; 
+- `BLUR_RADIUS` is the pixel radius of blur in the heatmap; 
+- `CIRCLESRADIUS` is the pixel radius of circles drawn in the heatmap; 
+- `MIN_OPACITY ` is the minimum opacity level in the heatmap.
+
+
+After the initialization, you can use as you want all the methods: 
+###`setSTEP (colorsArray, valuesArray)`
