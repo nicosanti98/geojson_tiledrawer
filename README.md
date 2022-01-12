@@ -31,7 +31,7 @@ Instead, to draw square heatmap, are required other two fields:
 Values x and y represents the coordinates of square inside the tile. 
 The tile in this case is divided into n subsquares: x and y represents wich square is described in the feature. 
 
-### Use
+### Usage
 
 ------------
 
@@ -51,7 +51,7 @@ this.MIN_OPACITY = 0.05;
 
 - `TILE_SIZE` is the tile side length in pixel; 
 - `POINT_RADIUS` is the radius of the points printed; 
-- `SQUARES_PER_TILE` is the number of squares in the tile shown in the square heatmap. If you select a power-of-two number, x and y value to add in the data array are equals and are square root of numeber of squares; 
+- `SQUARES_PER_TILE` is the number of squares in the tile shown in the square heatmap. If you select a power-of-two number, x and y value to add in the data array are equals and are the square root of the number of squares
 - `BLUR_RADIUS` is the pixel radius of blur in the heatmap; 
 - `CIRCLESRADIUS` is the pixel radius of circles drawn in the heatmap; 
 - `MIN_OPACITY ` is the minimum opacity level in the heatmap.
@@ -63,12 +63,20 @@ After the initialization, you can use as you want all the methods:
 Calling this method allows you to define the steps within wich a certain `value` inside a range of the features mean a certain color in the map.  The params are: 
 - `colorsArray` colors represented in RGBA format. This array's length must be equal to `valuesArray.length +1`. This because first color is for data from minimum value to first `valuesArray[0]` data. Second color is the color associated to values between first and second value of `valuesArray`, etc.
 #### `setTS (value)`
-Sets tile size previously defined to new `value`
+Sets tile size previously defined to new `value`;
 #### `setPR (value)`
-Sets point radius previously defined to new `value`
+Sets point radius previously defined to new `value`;
 #### `setCR (value)`
-Sets cricles radius previously defined to new `value`
+Sets cricles radius previously defined to new `value`;
 #### `setMO (value)`
-Sets minimum opacity previously defined to new `value`
+Sets minimum opacity previously defined to new `value`;
 #### `setSPT (value)`
-Sets squares per tile previously defined to new `value`
+Sets squares per tile previously defined to new `value`;
+#### `buildBbox (x, y, zoom)`
+From x and y latitude and longitude numbers and zoom level, taken from frontend map, returns a bounding box of the form `[w, s, e, n]`, simply using the library [**sphericalmercator**](https://github.com/mapbox/sphericalmercator "**sphericalmercator**");
+#### `buildPTile (data, zoom, bbox)`
+Passing data with the format for points, zoom level and bounding box, this method retrives the tile with the points, using the settings described before; 
+#### `buildHTile (data, zoom, bbox)`
+Passing data with the format for heatmap (the same for points), zoom level and bounding box, this method retrives the tile with the heatmap, using the settings described before;
+#### `buildSTile (data)`
+Passing data with the format for square heatmap (without zoom and bbox) because in data are required also the position coordinates x and y for feature inside the tile; this method retrives the tile with the square heatmap, using the settings described before. 
