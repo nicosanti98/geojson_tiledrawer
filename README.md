@@ -60,3 +60,15 @@ this.MIN_OPACITY = 0.05;
 After the initialization, you can use as you want all the methods: 
 
 #### `setSTEP (colorsArray, valuesArray)`
+Calling this method allows you to define the steps within wich a certain `value` inside a range of the features mean a certain color in the map.  The params are: 
+- `colorsArray` colors represented in RGBA format. This array's length must be equal to `valuesArray.length +1`. This because first color is for data from minimum value to first `valuesArray[0]` data. Second color is the color associated to values between first and second value of `valuesArray`, etc.
+#### `setTS (value)`
+Sets tile size previously defined to new `value`
+#### `setPR (value)`
+Sets point radius previously defined to new `value`
+#### `setCR (value)`
+Sets cricles radius previously defined to new `value`
+#### `setMO (value)`
+Sets minimum opacity previously defined to new `value`
+#### `setSPT (value)`
+Sets squares per tile previously defined to new `value`
